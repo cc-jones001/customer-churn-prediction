@@ -1,6 +1,6 @@
 # Customer Churn Prediction
 
-![tests](../../actions/workflows/tests.yml/badge.svg)
+[![tests](https://github.com/cc-jones001/customer-churn-prediction/actions/workflows/tests.yml/badge.svg)](https://github.com/cc-jones001/customer-churn-prediction/actions/workflows/tests.yml)
 
 An end-to-end machine learning project that predicts which telecom customers are about to cancel
 their service. It covers the whole path: verified public data, feature engineering, a fair
@@ -119,7 +119,8 @@ bundle security/tech support into fibre plans, and nudge customers towards autom
 ## Quick start
 
 ```bash
-git clone <this repo> && cd <repo>
+git clone https://github.com/cc-jones001/customer-churn-prediction.git
+cd customer-churn-prediction
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 pip install -e .
