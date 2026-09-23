@@ -1,0 +1,6 @@
+,roc_auc_mean,roc_auc_std,pr_auc_mean,pr_auc_std,f1_mean,f1_std,recall_mean,recall_std
+Logistic Regression,0.8474,0.0117,0.6616,0.0155,0.5934,0.0348,0.5351,0.0472
+Random Forest,0.8438,0.0092,0.6564,0.0249,0.5723,0.0275,0.5003,0.0274
+XGBoost,0.8419,0.0106,0.6566,0.0208,0.5796,0.0255,0.5144,0.0327
+Hist Gradient Boosting,0.8315,0.0081,0.6291,0.0212,0.5677,0.0187,0.5104,0.0266
+Baseline (majority class),0.5,0.0,0.2654,0.0001,0.0,0.0,0.0,0.0

@@ -1,0 +1,71 @@
+{
+  "dataset": {
+    "name": "IBM Telco Customer Churn",
+    "source": "https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv",
+    "sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91",
+    "rows": 7043,
+    "churn_rate": 0.2653698707936959,
+    "train_rows": 5634,
+    "test_rows": 1409
+  },
+  "selected_model": "XGBoost",
+  "best_params": {
+    "colsample_bytree": 0.9255683357584285,
+    "gamma": 0.6338440103125553,
+    "learning_rate": 0.016615566291523037,
+    "max_depth": 2,
+    "min_child_weight": 10,
+    "n_estimators": 472,
+    "reg_lambda": 0.7617088856151865,
+    "subsample": 0.6388705975083074
+  },
+  "cv_roc_auc_tuned": {
+    "Logistic Regression": 0.8476949932179048,
+    "Random Forest": 0.8476025129455091,
+    "Hist Gradient Boosting": 0.8454084823926052,
+    "XGBoost": 0.8503358469938884
+  },
+  "test_metrics": {
+    "roc_auc": 0.8474114547004572,
+    "pr_auc": 0.6656916515210292,
+    "accuracy": 0.7735982966643009,
+    "precision": 0.5542406311637081,
+    "recall": 0.7513368983957219,
+    "f1": 0.637911464245176,
+    "brier": 0.13477876782417297,
+    "lift_top10pct": 2.832214510562445,
+    "capture_top10pct": 0.28342245989304815,
+    "lift_top20pct": 2.511586452762923,
+    "capture_top20pct": 0.5026737967914439,
+    "confusion_matrix": {
+      "tn": 809,
+      "fp": 226,
+      "fn": 93,
+      "tp": 281
+    },
+    "threshold": 0.3238624930381775
+  },
+  "test_metrics_threshold_0.5": {
+    "roc_auc": 0.8474114547004572,
+    "pr_auc": 0.6656916515210292,
+    "accuracy": 0.8019872249822569,
+    "precision": 0.6632302405498282,
+    "recall": 0.516042780748663,
+    "f1": 0.5804511278195489,
+    "brier": 0.13477876782417297,
+    "lift_top10pct": 2.832214510562445,
+    "capture_top10pct": 0.28342245989304815,
+    "lift_top20pct": 2.511586452762923,
+    "capture_top20pct": 0.5026737967914439,
+    "confusion_matrix": {
+      "tn": 937,
+      "fp": 98,
+      "fn": 181,
+      "tp": 193
+    },
+    "threshold": 0.5
+  },
+  "shap_plot": true,
+  "runtime_seconds": 631.8,
+  "quick_mode": false
+}
